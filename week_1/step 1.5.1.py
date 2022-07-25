@@ -26,7 +26,7 @@ class MoneyBox:
         self.value = 0
 
     def can_add(self, v):
-        return bool(self.capacity >= self.value + v)
+        return self.capacity >= self.value + v
 
     def add(self, v):
         self.value += v
